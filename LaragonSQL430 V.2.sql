@@ -1,4 +1,4 @@
-CREATE DATABASE Panaderia;
+zzCREATE DATABASE Panaderia;
 CREATE DATABASE Escuela;
 CREATE DATABASE Negocio;
 CREATE DATABASE Jugueteria;
@@ -61,7 +61,16 @@ VALUES ('Fluffy','Harold','cat','f','1993-02-04',NULL),
 ('Claws','Gwen','cat','m','1994-03-17',NULL),
 ('Buffy','Harold','dog','f','1989-05-13',NULL),
 ('Fang','Benny','dog','m','1990-08-27',NULL),
-('Bowser', 'Diane', 'dog','m','1979-08-31' ,'1979-08-31'),
+('Bowser', 'Diane', 'dog','m','1979    -08-31' ,'1979-08-31'),
 ('Chirpy','Gwen','bird','f','1998-09-11',NULL),
 ('Whistler','Gwen','bird',NULL,'1997-12-09',NULL),
 ('Slim','Benny','snake','m','1996-04-29',NULL);
+
+DESCRIBE mascota
+SELECT*FROM mascota; 
+ 
+UPDATE mascota SET Sexo='f' WHERE nombre = 'Slim';
+USE veterinaria
+UPDATE mascota SET dueño='Alex',especie='bird' WHERE nombre = 'Fang';
+DELETE FROM mascota WHERE nombre = 'Buffy';
+UPDATE mascota SET dueño='CECYTEM' WHERE dueño = 'Gwen'
