@@ -74,3 +74,27 @@ USE veterinaria
 UPDATE mascota SET dueño='Alex',especie='bird' WHERE nombre = 'Fang';
 DELETE FROM mascota WHERE nombre = 'Buffy';
 UPDATE mascota SET dueño='CECYTEM' WHERE dueño = 'Gwen'
+CREATE DATABASE Biblioteca2;
+USE Biblioteca2;
+CREATE TABLE Autores (
+Id_Autor INT,
+NombreAutor VARCHAR(15) NULL DEFAULT NULL,
+Pais VARCHAR(10)NULL DEFAULT NULL 
+);
+CREATE TABLE Libros ( 
+Id_Libros INT,
+Titulos VARCHAR (50)
+);
+
+INSERT INTO Autores 
+VALUES
+('Jason N, Gaylord', 'USA', NULL),
+('Pranav Rastogi', 'USA', NULL),
+('Scott Hanselman', 'USA', NULL),
+('Tood MIranda', 'USA', NULL),
+('F, Scott. Fitzgerald', 'USA', NULL),
+('Jane Austen ', 'UK',NULL),
+('J.D. Solinger ),
+
+
+
